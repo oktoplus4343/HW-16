@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.bg-box {
+    width: 800px;
+    height: 500px;
+    border: 10px solid darkgreen;
+    box-sizing: border-box;
+    background-color: #559900;
+
+    background-image:
+        url('https://www.freeiconspng.com/uploads/lamp-png-0.png'),
+        url('https://www.freeiconspng.com/uploads/grass-png-images-pictures-transparent-28.png'),
+        url('https://vignette.wikia.nocookie.net/mashaandthebear/images/e/e0/Ёжик.png/revision/latest?cb=20180209130328&&path-prefix=ru'),
+        url('https://avatanplus.com/files/resources/mid/58eb07b830eab15b56162788.png'),
+        url('https://img2.goodfon.ru/wallpaper/big/0/5b/pole-zelen-trava-dom-derevya.jpg');
+
+    background-position:
+        center top,
+        center bottom,
+        left center,
+        right center,
+        center center;
+
+    background-repeat:
+        repeat-x,
+        repeat-x,
+        repeat-y,
+        repeat-y,
+        no-repeat;
+
+    background-size:
+        auto 50px,
+        auto 80px,
+        50px auto,
+        50px auto,
+        calc(100% - 50px - 50px) calc(100% - 50px - 80px);
+}
+
+@media (max-width: 850px) {
+    .bg-box {
+        width: 95%;
+        height: 60vw;
+
+         background-size:
+            auto 40px,
+            auto 60px,
+            40px auto,
+            40px auto,
+            calc(100% - 40px - 40px) calc(100% - 40px - 60px);
+     }
+}
